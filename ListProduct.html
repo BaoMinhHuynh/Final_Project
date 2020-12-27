@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ListProduct</title>
+</head>
+<body>
+  
+     
+        <div class="header list_head">
+          <div class="logo">
+              <img src="img/noun_cloth_2129414.png">
+              <p>E-Shop</p>
+          </div>
+          <div class="sex">
+              <p>Men</p>
+              <p>Women</p>
+              <p>Kids</p>
+          </div>
+          <div class="iconBanner">
+              <p><img src="img/noun_avatar_2102861 (2).png"></img></p>
+              <p><img src="img/noun_cart_2102832 (4).png"></img></p>
+              <p><img src="img/noun_Search_2102816 (2).png"></img></p>
+              
+          </div>
+          
+      </div>
+      <div class="logo">
+        <img src="img//noun_Home_2102808.png"> 
+        <p> / All product</p>
+    </div>
+    <div class="App">  
+        <div class="box_navi">
+            <div class="box_list">
+              <div class="flexTiltle">
+              <p style={{fontWeight: "bold", fontSize: "12px"}}>PRODUCT TYPE</p>
+              <p style={{paddingRight: "10px"}}>icon</p>
+              
+            </div>
+          <div  class="flexCheck">
+            <input value={selectedCheckBox.includes(0)} type="checkbox" class="container"></input>
+            <div class="nameProduct" ><p>T-Shirt <span style={{color: "grey"}}>(411)</span></p></div>
+          </div>
+          <div onClick={OnClickCheckBox(1)} class="flexCheck">
+            <input type="checkbox" class="container"></input>
+            <div class="nameProduct"><p>SweatShirts <span style={{color: "grey"}}>(131)</span></p></div>
+          </div>
+          <div  onClick={OnClickCheckBox(2)} class="flexCheck">
+            <input type="checkbox" class="container"></input>
+            <div  class="nameProduct"><p>Tank Tops <span style={{color: "grey"}}>(56)</span></p></div>
+          </div>
+          <div  onClick={OnClickCheckBox(3)} class="flexCheck">
+            <input type="checkbox" class="container"></input>
+            <div  class="nameProduct"><p>Dress Shirts <span style={{color: "grey"}}>(8)</span></p></div>
+          </div>
+          </div>
+          
+          <div class="box_of_size">
+              <div class="flexTiltle">
+              <p style={{fontWeight: "bold", fontSize: "12px"}}>SIZE</p>
+              <p style={{paddingRight: "10px"}}>icon</p>      
+            </div>
+            <div class="flexSize">
+                <button  class="boxSize">XS</button>
+                <button  class="boxSize">S</button>
+                <button  class="boxSize">M</button>
+                <button  class="boxSize">L</button>
+                <button  class="boxSize">XL</button>
+                <button  class="boxSize">XXL</button>
+                
+              </div>
+          </div>
+          <div class="box_of_color">
+              <div class="flexTiltle">
+              <p style="font-size: 12px; font-weight: bold;">COLOR</p>
+              <p style={{paddingRight: "10px"}}>icon</p> 
+            </div>
+            <div class="flexSize">
+              <button class="Color" style="background-color: #000000;"></button>
+              <button class="Color" style="background-color: #6F3E18;"></button>
+              <button class="Color" style="background-color: #D4BE8D;"></button>
+              <button class="Color" style="background-color: #838383;" ></button>
+              <button class="Color" style="background-color: #FFFFFF;" ></button>
+              <button class="Color" style="background-color: #0F73AD;"></button>
+             
+              </div>
+              </div>
+          </div>
+          <div class="flex_content">
+            <div class="flex_content_banner">
+              
+              <p>Men Tops <span style={{color: "grey"}}>(2)</span></p>
+              <div class="flex_navi">
+                
+              <div class="sort_product">
+              <p>Show products:  
+               
+               </p>
+               <Dropdown  controlClass="dropdown" options={options} onChange={selectDropdown}   placeholder="30"/>
+                
+              </div>
+                
+               
+               <div class="sort_price">
+               <p>Sort:  </p>
+                <Dropdown  controlClass="dropdown_sort" options={options2} onChange={selectDropdown}   placeholder="POPULAR"/>
+               </div>  
+               
+               
+            </div> 
+           
+            </div>
+            <div class="box" style="margin-right: 100px;">
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+             
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="box" style="margin-right: 100px;margin-top: 70px">
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+             
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="box" style="margin-right: 100px;margin-top: 70px">
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+             
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+              <div class="box_picture">
+                <div class="box_saleValue"><p>35%</p></div>
+                <img src="img/boxproductpic.jpg" class="objectContent"></img>
+                <div class="boxProductContainer">
+                  <div class="box_product">T-Shirt Summer Vibes</div>
+                  <span class="box_priceSale">$89.99</span><span class="box_price">$119.99</span>
+                </div>
+              </div>
+            </div>
+            <div >
+              <button>1</button>
+              <button>2</button>
+           
+          </div>
+          
+            </div>
+        </div>
+      </div>
+      <div class="footer_container">
+        <div class="bottom_banner_box">
+          <p>Subscribe to our newsletter and receive exclusive offers every week</p>
+          <div class="bottom_banner_buttons">
+            <input type="text" placeholder="Enter your email"></input>
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+       
+        <div class="footer_box">
+          <div class="footer_left">
+            <div>
+              <div class="logo">
+            
+                <p>E-Shop</p>
+            </div>
+              
+            </div>
+            <p>House My Brand design clothing for the young, the old and everyone in between - but most importantly, the fashionable</p>
+            <div class="socialMediaLinks">
+            <a href="#"><FaFacebookF/></a>
+            <a href="#"><FaInstagram/></a>
+            <a href="#"><FaTwitter/></a>
+            <a href="#"><FaYoutube/></a>
+            <a href="#"><FaLinkedinIn/></a>
+            </div>
+            </div>
+          <div class="footer_box footer_right">
+            <div>
+              <p>Shopping online</p>
+              <ul class="footer_ul">
+                <li>
+                <a href="#">Order Status</a>
+                </li>
+                <li>
+                <a href="#">Shipping and Delivery</a>
+                </li>
+                <li>
+                <a href="#">Returns</a>
+                </li>
+                <li>
+                <a href="#">Payment options</a>
+                </li>
+                <li>
+                <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div >
+              <p>Information</p>
+              <ul class="footer_ul">
+                <li>
+                <a href="#">Gift Cards</a>
+                </li>
+                <li>
+                <a href="#">Find a store</a>
+                </li>
+                <li>
+                <a href="#">Newsletter</a>
+                </li>
+                <li>
+                <a href="#">Become a member</a>
+                </li>
+                <li>
+                <a href="#">Site feedback</a>
+                </li>
+              </ul>
+            </div>
+            <div >
+              <p>Contact</p>
+              <ul class="footer_ul">
+                <li>
+                <a href="#">store@uikit.com</a>
+                </li>
+                <li>
+                <a href="#">Hotline: +123123123</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+     
+</body>
+</html>
